@@ -15,6 +15,8 @@
 		695F3533268B2CD8004A8C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695F3531268B2CD8004A8C47 /* LaunchScreen.storyboard */; };
 		6994D175269463AE0060687B /* ZelleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6994D174269463A00060687B /* ZelleSDK.framework */; };
 		6994D176269463AE0060687B /* ZelleSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6994D174269463A00060687B /* ZelleSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69C2251C26C1444900EA0F47 /* FIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C2251B26C1444900EA0F47 /* FIAppTests.swift */; };
+		69C2252726C1452200EA0F47 /* ContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C2252626C1452200EA0F47 /* ContactTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 695F34BE2689BC45004A8C47;
 			remoteInfo = ZelleSDK;
+		};
+		69C2251E26C1444900EA0F47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 695F351B268B2CD6004A8C47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 695F3522268B2CD6004A8C47;
+			remoteInfo = FIApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -51,6 +60,10 @@
 		695F3532268B2CD8004A8C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		695F3534268B2CD8004A8C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6994D16F269463A00060687B /* ZelleSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZelleSDK.xcodeproj; path = ../ZelleSDK/ZelleSDK.xcodeproj; sourceTree = "<group>"; };
+		69C2251926C1444900EA0F47 /* FIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C2251B26C1444900EA0F47 /* FIAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIAppTests.swift; sourceTree = "<group>"; };
+		69C2251D26C1444900EA0F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C2252626C1452200EA0F47 /* ContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69C2251626C1444900EA0F47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +90,7 @@
 			children = (
 				6994D16F269463A00060687B /* ZelleSDK.xcodeproj */,
 				695F3525268B2CD6004A8C47 /* FIApp */,
+				69C2251A26C1444900EA0F47 /* FIAppTests */,
 				695F3524268B2CD6004A8C47 /* Products */,
 				695F3551268C846B004A8C47 /* Frameworks */,
 			);
@@ -79,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				695F3523268B2CD6004A8C47 /* FIApp.app */,
+				69C2251926C1444900EA0F47 /* FIAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +134,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		69C2251A26C1444900EA0F47 /* FIAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				69C2251B26C1444900EA0F47 /* FIAppTests.swift */,
+				69C2251D26C1444900EA0F47 /* Info.plist */,
+				69C2252626C1452200EA0F47 /* ContactTests.swift */,
+			);
+			path = FIAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +165,24 @@
 			productReference = 695F3523268B2CD6004A8C47 /* FIApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		69C2251826C1444900EA0F47 /* FIAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69C2252326C1444900EA0F47 /* Build configuration list for PBXNativeTarget "FIAppTests" */;
+			buildPhases = (
+				69C2251526C1444900EA0F47 /* Sources */,
+				69C2251626C1444900EA0F47 /* Frameworks */,
+				69C2251726C1444900EA0F47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69C2251F26C1444900EA0F47 /* PBXTargetDependency */,
+			);
+			name = FIAppTests;
+			productName = FIAppTests;
+			productReference = 69C2251926C1444900EA0F47 /* FIAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,6 +195,10 @@
 				TargetAttributes = {
 					695F3522268B2CD6004A8C47 = {
 						CreatedOnToolsVersion = 11.1;
+					};
+					69C2251826C1444900EA0F47 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 695F3522268B2CD6004A8C47;
 					};
 				};
 			};
@@ -168,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				695F3522268B2CD6004A8C47 /* FIApp */,
+				69C2251826C1444900EA0F47 /* FIAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +248,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69C2251726C1444900EA0F47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -206,7 +268,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69C2251526C1444900EA0F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C2252726C1452200EA0F47 /* ContactTests.swift in Sources */,
+				69C2251C26C1444900EA0F47 /* FIAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69C2251F26C1444900EA0F47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 695F3522268B2CD6004A8C47 /* FIApp */;
+			targetProxy = 69C2251E26C1444900EA0F47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		695F352C268B2CD6004A8C47 /* Main.storyboard */ = {
@@ -384,6 +463,44 @@
 			};
 			name = Release;
 		};
+		69C2252026C1444900EA0F47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FIAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiserv.dps.mobile.sdk.FIAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FIApp.app/FIApp";
+			};
+			name = Debug;
+		};
+		69C2252126C1444900EA0F47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FIAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiserv.dps.mobile.sdk.FIAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FIApp.app/FIApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -401,6 +518,15 @@
 			buildConfigurations = (
 				695F3538268B2CD8004A8C47 /* Debug */,
 				695F3539268B2CD8004A8C47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69C2252326C1444900EA0F47 /* Build configuration list for PBXNativeTarget "FIAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69C2252026C1444900EA0F47 /* Debug */,
+				69C2252126C1444900EA0F47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
